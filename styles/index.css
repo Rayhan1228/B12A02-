@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dark-1{
+   color: #8987A1; 
+}
+.dark-2{
+    color: #252432;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+
+   
+}
+.logo{
+    display: flex;
+    align-items: center;
+
+}
+.logo img {
+    height: 42px;
+    
+}
+.nav-title{
+    display: flex;
+    gap: 15px;
+}
+.nav-title a {
+    text-decoration: none;
+    font-size: 16px;
+    }
+.card{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+
+}
+.card-icon{
+    font-size: 20px;
+    margin-right: 5px;
+
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+  }
+
+  .text-content {
+    max-width: 50%;
+  }
+
+  .text-content h1 {
+    font-size: 40px;
+    margin: 50px 10px ;
+  }
+
+  .text-content h1 .black {
+    color:#000000;
+    font-weight: bold;
+  }
+
+  .text-content h1 .orange {
+    color: #E95A08;
+    font-weight: bold;
+  }
+
+  .text-content p {
+    font-size: 16px;
+  }
+
+  .banner img {
+    max-width: 40%;
+    height: auto;
+    
+  }
+
+@media (max-width: 768px) {
+    .navbar {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+  
+    .nav-title {
+      display: none; 
+    }
+  
+    .logo {
+      height: 35px;
+    }
+  
+    .card {
+      font-size: 14px;
+    }
+    
+  }
+
+  
