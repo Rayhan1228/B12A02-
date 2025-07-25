@@ -2,62 +2,58 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
 }
 
 .dark-1{
    color: #8987A1; 
 }
 .dark-2{
-    color: #252432;
+   color: #000000;
 }
 
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 40px;
 
-   
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+ 
 }
-.logo{
-    display: flex;
-    align-items: center;
 
-}
 .logo img {
-    height: 42px;
-    
+  height: 40px;
 }
-.nav-title{
-    display: flex;
-    gap: 15px;
-}
-.nav-title a {
-    text-decoration: none;
-    font-size: 16px;
-    }
-.card{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 16px;
 
+.nav-right {
+  display: flex;
+ align-items: center;
+  gap: 15px;
 }
-.card-icon{
-    font-size: 20px;
-    margin-right: 5px;
+.nav-right a {
+  text-decoration: none;
+}
 
+.fasolid {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
+
+
 
 .banner {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 40px;
+    gap: 20px;
+    
   }
 
   .text-content {
     max-width: 50%;
+    margin-left: 40px;
   }
 
   .text-content h1 {
@@ -79,31 +75,469 @@
     font-size: 16px;
   }
 
-  .banner img {
-    max-width: 40%;
+  .image-section {
+    flex: 1 1 400px;
+    text-align: center;
+  }
+
+  .image-section img {
+    max-width: 100%;
     height: auto;
     
   }
 
-@media (max-width: 768px) {
-    .navbar {
-      flex-direction: row;
-      justify-content: space-between;
-      padding: 10px 20px;
-    }
+  .main-h2 {
+    color: #000000;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+
+  }
+
+  .main-h2 span {
+    color: #E95A08;
+  }
+
+  .description {
+  text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px; 
+    padding: 20px;
+  }
+  .product-card {
+    width: 100%; 
+    max-width: 600px; 
+    padding: 2px;
+    text-align: center;
   
-    .nav-title {
-      display: none; 
-    }
+  }
+
+  .product-card img {
+    width: 100%;
+   
+  }
+
+  .product-name {
+    margin: 10px 0 5px;
+    font-weight: bold;
+  }
+
+  .product-price {
+    color: #111111;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .add-to-cart {
+    background-color: #E95A08;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    font-weight: bold;
+  }
+
+
+
+
+
+  .feature-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 120px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    margin-top: 150px;
+  }
   
-    .logo {
-      height: 35px;
-    }
+  .feature-image {
+    position: relative;
+    width: 50%;
+
+  }
   
-    .card {
-      font-size: 14px;
-    }
+    .feature-1st {
+    width: 400px ;
+    
+    height: auto;
+    display: block;
+  }
+  
+  
+  .trusted-badge {
+    position: absolute;
+    bottom: 320px;
+    left: 280px;
+    width: 200px;
+    height: 200px;
+    
     
   }
+  
+  .feature-content {
+    width: 50%;
+   margin-top: 100px;
+  }
+  
+  .feature-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #111;
+  }
+  
+  .feature-content ul {
+    padding-left: 20px;
+    color: #444;
+  }
+  
+  .feature-content li {
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+
+
+
+
+
+
+  .deals-section {
+    text-align: center;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 20px;
+  }
+  
+  .deals-section h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .deals-section h2 span {
+    color: #E95A08;
+    font-weight: bold;
+  }
+  
+  .deals-section p {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: #000000;
+  }
+  
+  .deals-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .left-deals {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+  }
+  
+  .deal-card {
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .deal-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .deal-card.small {
+    height: 150px;
+  }
+  
+  .deal-card.large {
+    flex: 2;
+    height: 320px;
+  }
+  
+  .deal-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+  }
+  
+  .shop-btn {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+
+
+
+
+
+  .subscribe-section {
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .subscribe-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .subscribe-form {
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .subscribe-form input {
+    padding: 10px 15px;
+    border: none;
+    flex: 1;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .subscribe-section {
+    background-image: url(../styles/assets/news-letter-bg.png); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 120px 20px;
+    text-align: center;
+    
+    position: relative;
+  }
+  
+  .subscribe-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .subscribe-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .subscribe-form {
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  .subscribe-form input {
+    padding: 10px 15px;
+    border: none;
+    flex: 1;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .subscribe-form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #E95A08;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+  /* Footer Section */
+  .footer-section {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+   
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .footer-left {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .footer-left .logo {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 40px;
+    flex: 2;
+    min-width: 300px;
+    justify-content: space-around;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .footer-social {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .footer-social img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  
+
+
+@media (max-width: 768px) {
+  
+  .nav-right a {
+    display: none;
+  }
+
+  .logo {
+    flex: 1;
+  }
+
+  .nav-right {
+    justify-content: flex-end;
+  }
+    
+    .banner {
+      flex-direction: column-reverse;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    }
+    
+    .text-content {
+      max-width: 100%;
+      padding: 0 16px;
+      margin: 0;
+      margin-top: -200px;
+      
+    }
+  
+    .text-content h1 {
+      font-size: 28px;
+      margin: 10px 0 5px;  
+      text-align: left;
+    }
+  
+    .text-content p {
+      font-size: 15px;
+      text-align: left;
+      
+    }
+
+  
+    .image-section {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .image-section img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
+    .product-grid{
+      grid-template-columns: repeat(2,4fr);
+    }
+    .description{
+      text-align: center;
+    }
+
+    .feature-section {
+      flex-direction: column;
+    }
+
+    .feature-image, .feature-content {
+      width: 100%;
+    }
+
+    .trusted-badge {
+     display:none;
+     ;
+    }
+
+    .deals-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .left-deals {
+      flex-direction: column;
+      width: 100%;
+      gap: 20px;
+    }
+  
+    .deal-card {
+      width: 90%; 
+      margin: 0 auto;
+    }
+  
+    .deal-card.large {
+      height: 220px;
+    }
+  
+    .deal-card.small {
+      height: 150px;
+    }
+  
+    .deals-section h2 {
+      font-size: 26px;
+    }
+  
+    .deals-section p {
+      font-size: 14px;
+      padding: 0 10px;
+    }
+    .footer-links{
+      display: grid;
+      text-align: start;
+    }
+    .features{
+      margin-top: -40px;
+    }
+  }
+    
+
 
   
